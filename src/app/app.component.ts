@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+export class TodoNotFoundError extends Error {}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Library';
-}
+
+  /**
+   * @throws TodoNotFoundErro
+   */
+  public hello():void{
+
+  }
+ }
